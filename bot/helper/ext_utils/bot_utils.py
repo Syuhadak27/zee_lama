@@ -29,15 +29,15 @@ PAGES           = 1
 PAGE_NO         = 1
 
 class MirrorStatus:
-    STATUS_UPLOADING    = "Uploading"
-    STATUS_DOWNLOADING  = "Downloading"
-    STATUS_CLONING      = "Cloning"
-    STATUS_QUEUEDL      = "Queued Download"
-    STATUS_QUEUEUP      = "Queued Upload"
-    STATUS_PAUSED       = "Paused"
-    STATUS_ARCHIVING    = "Archiving"
-    STATUS_EXTRACTING   = "Extracting"
-    STATUS_SPLITTING    = "Spliting"
+    STATUS_UPLOADING    = "Upload📤"
+    STATUS_DOWNLOADING  = "Download📥"
+    STATUS_CLONING      = "Clone🔄"
+    STATUS_QUEUEDL      = "QueDL⏳"
+    STATUS_QUEUEUP      = "QueUP⏳"
+    STATUS_PAUSED       = "Paused⏸"
+    STATUS_ARCHIVING    = "Archiving🗂"
+    STATUS_EXTRACTING   = "Extracting📦"
+    STATUS_SPLITTING    = "Spliting✂️"
     STATUS_CHECKING     = "CheckingUp"
     STATUS_SEEDING      = "Seeding"
 
@@ -115,8 +115,8 @@ def get_progress_bar_string(pct):
         pct = float(pct.strip('%'))
     p = min(max(pct, 0), 100)
     cFull = int(p // 10)
-    p_str = '█' * cFull
-    p_str += '▒' * (10 - cFull)
+    p_str = '●' * cFull
+    p_str += '○' * (10 - cFull)
     return f"{p_str}"
 
 
@@ -172,7 +172,7 @@ def get_readable_message():
         else:
             msg += f"\n⌑ <code>Task   </code>: <a href='{download.message.link}'>{download.extra_details['mode']}</a>"
         msg += f"\n⌑ <code>User   </code>: {tag}"
-        msg += f"\n⚠️ /{BotCommands.CancelMirror}_{download.gid()}\n\n"
+        msg += f"\n\n⚠️ /{BotCommands.CancelMirror}_{download.gid()}\n────────────────────────\n"
     if len(msg) == 0:
         return None, None
     def convert_speed_to_bytes_per_second(spd):
