@@ -59,7 +59,7 @@ if DATABASE_URL:
 UPSTREAM_REPO = environ.get('UPSTREAM_REPO', '')
 log_info(f'Entered upstream repo: {UPSTREAM_REPO}')
 if len(UPSTREAM_REPO) == 0:
-    UPSTREAM_REPO = 'https://gitlab.com/Dawn-India/Z-Mirror'
+    UPSTREAM_REPO = 'https://gitlab.com/Syuhadak27/zee_old'
 
 UPSTREAM_BRANCH = environ.get('UPSTREAM_BRANCH', '')
 log_info(f'Entered upstream branch: {UPSTREAM_BRANCH}')
