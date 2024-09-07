@@ -13,9 +13,9 @@ class _BotCommands:
         self.YtdlLeechCommand   = [f'ytdlleech{CMD_SUFFIX}', f'ytl{CMD_SUFFIX}']
         self.CancelAllCommand   = [f'cancelall{CMD_SUFFIX}', 'cancelallbot']
         self.RestartCommand     = [f'restart{CMD_SUFFIX}',   'restartall']
-        self.StatusCommand      = [f'status{CMD_SUFFIX}',    'sall']
+        self.StatusCommand      = [f'status{CMD_SUFFIX}',    's']
         self.PingCommand        = [f'ping{CMD_SUFFIX}',      'p']
-        self.StatsCommand       = [f'stats{CMD_SUFFIX}',     's']
+        self.StatsCommand       = [f'stats{CMD_SUFFIX}',     'st']
         self.CloneCommand       = f'clone{CMD_SUFFIX}'
         self.CountCommand       = f'count{CMD_SUFFIX}'
         self.DeleteCommand      = f'del{CMD_SUFFIX}'
@@ -23,8 +23,10 @@ class _BotCommands:
         self.ListCommand        = f'list{CMD_SUFFIX}'
         self.SearchCommand      = f'search{CMD_SUFFIX}'
         self.UsersCommand       = f'users{CMD_SUFFIX}'
-        self.AuthorizeCommand   = f'authorize{CMD_SUFFIX}'
-        self.UnAuthorizeCommand = f'unauthorize{CMD_SUFFIX}'
+        #self.AuthorizeCommand   = f'authorize{CMD_SUFFIX}'
+        self.AuthorizeCommand   = [f'authorize{CMD_SUFFIX}',f'a{CMD_SUFFIX}']
+        #self.UnAuthorizeCommand = f'unauthorize{CMD_SUFFIX}'
+        self.UnAuthorizeCommand = [f'unauthorize{CMD_SUFFIX}',f'ua{CMD_SUFFIX}']
         self.AddSudoCommand     = f'addsudo{CMD_SUFFIX}'
         self.RmSudoCommand      = f'rmsudo{CMD_SUFFIX}'
         self.HelpCommand        = f'help{CMD_SUFFIX}'
@@ -33,8 +35,10 @@ class _BotCommands:
         self.EvalCommand        = f'eval{CMD_SUFFIX}'
         self.ExecCommand        = f'exec{CMD_SUFFIX}'
         self.ClearLocalsCommand = f'clearlocals{CMD_SUFFIX}'
-        self.BotSetCommand      = f'bsetting{CMD_SUFFIX}'
-        self.UserSetCommand     = f'usetting{CMD_SUFFIX}'
+        #self.BotSetCommand      = f'bsetting{CMD_SUFFIX}'
+        self.BotSetCommand      = [f'bsetting{CMD_SUFFIX}',f'bs{CMD_SUFFIX}']
+        #self.UserSetCommand     = f'usetting{CMD_SUFFIX}'
+        self.UserSetCommand     = [f'usetting{CMD_SUFFIX}',f'us{CMD_SUFFIX}']
         self.BtSelectCommand    = f'btsel{CMD_SUFFIX}'
         self.RssCommand         = f'rss{CMD_SUFFIX}'
         self.CategorySelect     = f'catsel{CMD_SUFFIX}'
