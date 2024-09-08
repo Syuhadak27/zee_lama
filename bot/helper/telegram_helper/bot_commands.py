@@ -13,9 +13,9 @@ class _BotCommands:
         self.YtdlLeechCommand   = [f'ytdlleech{CMD_SUFFIX}', f'ytl{CMD_SUFFIX}']
         self.CancelAllCommand   = [f'cancelall{CMD_SUFFIX}', 'cancelallbot']
         self.RestartCommand     = [f'restart{CMD_SUFFIX}',   'restartall']
-        self.StatusCommand      = [f'status{CMD_SUFFIX}',    'sall']
+        self.StatusCommand      = [f'status{CMD_SUFFIX}',    's']
         self.PingCommand        = [f'ping{CMD_SUFFIX}',      'p']
-        self.StatsCommand       = [f'stats{CMD_SUFFIX}',     's']
+        self.StatsCommand       = [f'stats{CMD_SUFFIX}',     'st']
         self.CloneCommand       = f'clone{CMD_SUFFIX}'
         self.CountCommand       = f'count{CMD_SUFFIX}'
         self.DeleteCommand      = f'del{CMD_SUFFIX}'
