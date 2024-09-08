@@ -1,7 +1,5 @@
 
-# WZML
-
-Panduan untuk membuat dan men-deploy aplikasi WZML di Heroku.
+# Zee Mirror OLD
 
 ## Create and Deploy
 
