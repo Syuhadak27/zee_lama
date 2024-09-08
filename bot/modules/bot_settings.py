@@ -300,7 +300,7 @@ async def load_config():
 
     UPSTREAM_REPO = environ.get('UPSTREAM_REPO', '')
     if len(UPSTREAM_REPO) == 0:
-        UPSTREAM_REPO = 'https://gitlab.com/Syuhadak27/zee_old'
+        UPSTREAM_REPO = 'https://github.com/Syuhadak27/zee_lama'
 
     UPSTREAM_BRANCH = environ.get('UPSTREAM_BRANCH', '')
     if len(UPSTREAM_BRANCH) == 0:
